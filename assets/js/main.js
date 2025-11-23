@@ -15,3 +15,24 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+// Pointer-driven glow
+const root = document.documentElement;
+const handlePointerMove = (event) => {
+  root.style.setProperty('--pointer-x', `${event.clientX}px`);
+  root.style.setProperty('--pointer-y', `${event.clientY}px`);
+};
+
+window.addEventListener('pointermove', handlePointerMove);
+
+// Click pulse effect
+window.addEventListener('click', (event) => {
+  const pulse = document.createElement('span');
+  pulse.className = 'click-pulse';
+  pulse.style.left = `${event.clientX}px`;
+  pulse.style.top = `${event.clientY}px`;
+  document.body.appendChild(pulse);
+  setTimeout(() => {
+    pulse.remove();
+  }, 600);
+});

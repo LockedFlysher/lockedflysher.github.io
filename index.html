@@ -50,23 +50,61 @@
             <h2>Highlighted Work</h2>
             <p>Key demos and deliverables structured as context → solution → measurable result.</p>
           </div>
-          <div class="experience-list">
-            <article class="card experience-card">
+          <div class="experience-grid">
+            <div class="experience-list">
+              <article
+                class="card experience-card is-active"
+                data-video="assets/videos/lejv1.mov"
+                data-videos="assets/videos/lejv1.mov|assets/videos/lejv2.mov"
+                data-video-titles="Parallel MPC GPU Solver|Kuavo Blind Locomotion"
+                data-label="Leju Robotics · Parallel MPC"
+                data-summary="Parallel MPC exploration on quadruped platforms, rendered via GPU-accelerated solvers and Kuavo blind locomotion demos."
+              >
+              <header>
+                <div>
+                  <h3>Leju Robotics</h3>
+                  <p>Lead Motion Control Engineer</p>
+                </div>
+                <span>Jun 2025 – Nov 2025</span>
+              </header>
+              <p>Directed the application of Parallel MPC on quadruped robots, building the end-to-end stack from solver to RL-assisted policy transfer.</p>
+              <ul class="detail-list">
+                <li>Implemented a GPU-parallel MPC solver supporting Whole-Body Dynamics (WBD), Floating-Base (FCD), and Single-Rigid-Body (SRBD) models with a unified JAX codebase.</li>
+                <li>Used MPC-generated high-quality trajectories to guide reinforcement learning, accelerating convergence, simplifying reward shaping, and boosting robustness versus standalone MPC.</li>
+                <li>Deployed end-to-end reinforcement learning to let Kuavo robots traverse structured terrain under blind locomotion constraints.</li>
+              </ul>
+              </article>
+
+              <article
+                class="card experience-card"
+                data-video="https://player.bilibili.com/player.html?bvid=BV1DzrAYMEoY&autoplay=0&muted=1"
+                data-videos="https://player.bilibili.com/player.html?bvid=BV1DzrAYMEoY&autoplay=0&muted=1|assets/videos/qiling2.mov"
+                data-video-titles="Qiling Robotics · Gait Demo|Qiling Robotics · Field Test"
+                data-label="Qiling Robotics · Gait Demo"
+                data-summary="Parallel ankle solver for tall legged robots, recorded on a lab treadmill demo."
+              >
               <header>
                 <div>
                   <h3>Qiling Robotics</h3>
                   <p>Motion Control Engineer</p>
                 </div>
-                <span>Apr 2024 – Present</span>
+                <span>Apr 2024 – May 2025</span>
               </header>
               <p>Leading legged-robot control research across full-body form factors, covering MPC, reinforcement learning, and production deployment.</p>
               <ul class="detail-list">
-                <li>Designed a fast analytic solver for parallel ankle joints, enabling a 26-DoF legged robot to walk stably at 1.2 m/s and recover from external pushes.</li>
+                <li>Delivered 1.2 m/s stable walking with rapid recovery from external pushes on a 26-DoF legged robot.</li>
                 <li>Built a ROS2 + in-house SDK interaction layer so algorithms, simulators, and physical robots share standardized control/telemetry APIs.</li>
               </ul>
-            </article>
+              </article>
 
-            <article class="card experience-card">
+              <article
+                class="card experience-card"
+                data-video="https://www.youtube.com/embed/zj-0W1zDL0w?rel=0&mute=1"
+                data-videos="https://www.youtube.com/embed/zj-0W1zDL0w?rel=0&mute=1|https://www.youtube.com/embed/zj-0W1zDL0w?rel=0&mute=1"
+                data-video-titles="Lingwen Technology · EtherCAT Live|Lingwen Technology · Stair Trial"
+                data-label="Lingwen Technology · EtherCAT Live"
+                data-summary="Realtime EtherCAT backbone powering stair and slope trials on quadruped + tall legged robots."
+              >
               <header>
                 <div>
                   <h3>Lingwen Technology</h3>
@@ -80,7 +118,43 @@
                 <li>Completed Elmo drive parameter identification plus controller tuning, reaching 4 kHz distributed clock synchronization.</li>
                 <li>Unlocked stable stair-stepping on tall legged robots and boosted quadruped flat-ground speed to 0.7 m/s while climbing 0–15° slopes reliably.</li>
               </ul>
-            </article>
+              </article>
+            </div>
+
+            <aside class="experience-media" aria-live="polite">
+              <div class="media-videos">
+                <div class="video-display" data-slot="0" data-active="assets/videos/lejv1.mov">
+                  <div class="video-layer is-active">
+                    <video
+                      src="assets/videos/lejv1.mov"
+                      title="Leju Robotics · Parallel MPC"
+                      playsinline
+                      muted
+                      autoplay
+                      loop
+                      controls
+                    ></video>
+                  </div>
+                </div>
+                <div class="video-display" data-slot="1" data-active="assets/videos/lejv2.mov">
+                  <div class="video-layer is-active">
+                    <video
+                      src="assets/videos/lejv2.mov"
+                      title="Kuavo Blind Locomotion"
+                      playsinline
+                      muted
+                      autoplay
+                      loop
+                      controls
+                    ></video>
+                  </div>
+                </div>
+              </div>
+              <div class="video-info">
+                <p class="video-label" id="videoLabel">Leju Robotics · Parallel MPC</p>
+                <p class="video-desc" id="videoDesc">Parallel MPC exploration on quadruped platforms, rendered via GPU-accelerated solvers and Kuavo blind locomotion demos.</p>
+              </div>
+            </aside>
           </div>
         </div>
       </section>

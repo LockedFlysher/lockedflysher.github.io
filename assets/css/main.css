@@ -329,6 +329,108 @@ img {
   margin: 8px 0 0;
 }
 
+.experience-card {
+  cursor: pointer;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.experience-card.is-active {
+  border-color: rgba(108, 99, 255, 0.7);
+  transform: translateX(6px);
+}
+
+.experience-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.experience-media {
+  position: sticky;
+  top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.media-videos {
+  width: min(520px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-display {
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  box-shadow: var(--shadow);
+  background: radial-gradient(circle at 30% 20%, rgba(108, 99, 255, 0.25), rgba(255, 255, 255, 0));
+  width: 100%;
+}
+
+.video-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  transform: scale(0.98);
+}
+
+.video-layer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-layer video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 0;
+}
+
+.video-layer.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.video-layer.is-leaving {
+  opacity: 0;
+  transform: scale(1.02);
+}
+
+.video-info {
+  padding: 20px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  box-shadow: var(--shadow);
+  width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.video-label {
+  margin: 0 0 6px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.video-desc {
+  margin: 0;
+  color: var(--muted);
+}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -448,6 +550,20 @@ img {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-media {
+    position: static;
+    align-items: stretch;
+    top: auto;
+  }
+
+  .media-videos {
+    width: 100%;
   }
 
   nav ul {

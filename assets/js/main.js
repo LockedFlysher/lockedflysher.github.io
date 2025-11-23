@@ -30,7 +30,7 @@ const translations = {
   zh: {
     nav_work: '项目',
     nav_education: '教育',
-    nav_skills: '工具',
+    nav_skills: '工具集',
     nav_contact: '联系',
     hero_eyebrow: '我们至死都是学生',
     hero_heading: 'SunnyPea · 机器人运动控制工程师',

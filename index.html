@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,13 +16,13 @@
   <body>
     <header class="site-header" id="top">
       <div class="container flex-between">
-        <a class="logo" href="#top">SunnyPea</a>
+        <button class="lang-toggle" type="button" aria-label="Toggle language">EN</button>
         <nav>
           <ul>
-            <li><a href="#experience">Work</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#experience" data-i18n="nav_work">Work</a></li>
+            <li><a href="#education" data-i18n="nav_education">Education</a></li>
+            <li><a href="#oss" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
           </ul>
         </nav>
         <a class="btn ghost" href="https://github.com/lockedflysher" target="_blank" rel="noreferrer">GitHub</a>
@@ -33,16 +33,16 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Students until the last sunrise</p>
-            <h1>SunnyPea · Robotics Motion Control Engineer</h1>
+            <p class="eyebrow" data-i18n="hero_eyebrow">Students until the last sunrise</p>
+            <h1 data-i18n="hero_heading">SunnyPea · Robotics Motion Control Engineer</h1>
             <div class="lede lede-list">
-              <span>• Learning-based motion control built on the IsaacLab framework.</span>
-              <span>• OCS2 or CasADi optimal-control toolkits for model-based control.</span>
-              <span>• Python/C++, ROS1/ROS2, EtherCAT, Mujoco, and Gazebo tooling.</span>
+              <span data-i18n="hero_bullet1">• Learning-based motion control built on the IsaacLab framework.</span>
+              <span data-i18n="hero_bullet2">• Model-based control pipelines powered by OCS2 or CasADi.</span>
+              <span data-i18n="hero_bullet3">• Python/C++, ROS1/ROS2, EtherCAT, Mujoco, and Gazebo tooling.</span>
             </div>
             <div class="cta-group">
-              <a class="btn" href="#experience">See Work</a>
-              <a class="btn ghost" href="mailto:LockedFlysher@qq.com">Email Me</a>
+              <a class="btn" href="#experience" data-i18n="hero_cta_primary">See Work</a>
+              <a class="btn ghost" href="mailto:LockedFlysher@qq.com" data-i18n="hero_cta_secondary">Email Me</a>
             </div>
           </div>
           <div class="hero-media" aria-label="SunnyPea portrait">
@@ -57,8 +57,8 @@
       <section class="experience" id="experience">
         <div class="container">
           <div class="section-heading">
-            <h2>Highlighted Work</h2>
-            <p>Hover or tap on each experience to preview its paired demos; the right panel updates instantly with synchronized videos.</p>
+            <h2 data-i18n="exp_heading">Highlighted Work</h2>
+            <p data-i18n="exp_desc">Hover or tap on each experience to preview its paired demos; the right panel updates instantly with synchronized videos.</p>
           </div>
           <div class="experience-grid">
             <div class="experience-list">
@@ -72,16 +72,16 @@
               >
               <header>
                 <div>
-                  <h3>Leju Robotics</h3>
-                  <p>Lead Motion Control Engineer</p>
+                  <h3 data-i18n="exp_leju_company">Leju Robotics</h3>
+                  <p data-i18n="exp_leju_role">Motion Control Algorithm Engineer</p>
                 </div>
                 <span>Jun 2025 – Nov 2025</span>
               </header>
-              <p>Directed the application of Parallel MPC on quadruped robots, building the end-to-end stack from solver to RL-assisted policy transfer.</p>
+              <p data-i18n="exp_leju_desc">Directed the application of Parallel MPC on quadruped robots, establishing the pipeline from solver design to RL-assisted deployment.</p>
               <ul class="detail-list">
-                <li>Implemented a GPU-parallel MPC solver supporting Whole-Body Dynamics (WBD), Floating-Base (FCD), and Single-Rigid-Body (SRBD) models with a unified JAX codebase.</li>
-                <li>Used MPC-generated high-quality trajectories to guide reinforcement learning, accelerating convergence, simplifying reward shaping, and boosting robustness versus standalone MPC.</li>
-                <li>Deployed end-to-end reinforcement learning to let Kuavo robots traverse structured terrain under blind locomotion constraints.</li>
+                <li data-i18n="exp_leju_li1">Implemented a GPU-parallel MPC solver supporting Whole-Body Dynamics (WBD), Full Centroidal Dynamics (FCD), and Single-Rigid-Body (SRBD) models with a unified JAX codebase.</li>
+                <li data-i18n="exp_leju_li2">Used MPC-generated high-quality trajectories to guide reinforcement learning, accelerating convergence, simplifying reward shaping, and boosting robustness versus standalone MPC.</li>
+                <li data-i18n="exp_leju_li3">Deployed end-to-end reinforcement learning to let Kuavo robots traverse structured terrain under blind locomotion constraints.</li>
               </ul>
               </article>
 
@@ -95,15 +95,15 @@
               >
               <header>
                 <div>
-                  <h3>Qiling Robotics</h3>
-                  <p>Motion Control Engineer</p>
+                  <h3 data-i18n="exp_qiling_company">Qiling Robotics</h3>
+                  <p data-i18n="exp_qiling_role">Motion Control Algorithm Engineer</p>
                 </div>
                 <span>Apr 2024 – May 2025</span>
               </header>
-              <p>Leading legged-robot control research across full-body form factors, covering MPC, reinforcement learning, and production deployment.</p>
+              <p data-i18n="exp_qiling_desc">Focused on humanoid reinforcement-learning control algorithms and their deployment on physical robots.</p>
               <ul class="detail-list">
-                <li>Delivered 1.2 m/s stable walking with rapid recovery from external pushes on a 26-DoF legged robot.</li>
-                <li>Built a ROS2 + in-house SDK interaction layer so algorithms, simulators, and physical robots share standardized control/telemetry APIs.</li>
+                <li data-i18n="exp_qiling_li1">Delivered 1.2 m/s stable walking with rapid recovery from external pushes on a 26-DoF legged robot.</li>
+                <li data-i18n="exp_qiling_li2">Built a ROS2 + in-house SDK interaction layer so algorithms, simulators, and physical robots share standardized control/telemetry APIs.</li>
               </ul>
               </article>
 
@@ -117,16 +117,16 @@
               >
               <header>
                 <div>
-                  <h3>Lingwen Technology</h3>
-                  <p>EtherCAT Communication Engineer</p>
+                  <h3 data-i18n="exp_lingwen_company">Lingwen Technology</h3>
+                  <p data-i18n="exp_lingwen_role">EtherCAT Communication Engineer</p>
                 </div>
                 <span>Oct 2023 – Apr 2024</span>
               </header>
-              <p>Delivered the real-time communication backbone for quadruped and other legged platforms.</p>
+              <p data-i18n="exp_lingwen_desc">Delivered the real-time communication backbone for quadruped and other legged platforms.</p>
               <ul class="detail-list">
-                <li>Authored a reusable EtherCAT master communication library and hardware interface algorithms supporting CSP / CSV / CST modes.</li>
-                <li>Completed Elmo drive parameter identification plus controller tuning, reaching 4 kHz distributed clock synchronization.</li>
-                <li>Unlocked stable stair-stepping on tall legged robots and boosted quadruped flat-ground speed to 0.7 m/s while climbing 0–15° slopes reliably.</li>
+                <li data-i18n="exp_lingwen_li1">Authored a reusable EtherCAT master communication library and hardware interface algorithms supporting CSP / CSV / CST modes.</li>
+                <li data-i18n="exp_lingwen_li2">Completed Elmo drive parameter identification plus controller tuning, reaching 4 kHz distributed clock synchronization.</li>
+                <li data-i18n="exp_lingwen_li3">Unlocked stable stair-stepping on tall legged robots and boosted quadruped flat-ground speed to 0.7 m/s while climbing 0–15° slopes reliably.</li>
               </ul>
               </article>
             </div>
@@ -173,39 +173,38 @@
       <section class="education" id="education">
         <div class="container">
           <div class="section-heading">
-            <h2>Education</h2>
-            <p>Each stage is framed around experimentation and demo-driven learning.</p>
+            <h2 data-i18n="edu_heading">Education</h2>
           </div>
           <div class="edu-list">
             <article class="card edu-card">
               <div class="edu-meta">
                 <div>
-                  <h3>Huazhong University of Science and Technology</h3>
-                  <p>School of Artificial Intelligence & Automation · M.Eng</p>
+                  <h3 data-i18n="edu_master_title">Huazhong University of Science and Technology</h3>
+                  <p data-i18n="edu_master_school">School of Artificial Intelligence & Automation · M.Eng</p>
                 </div>
                 <span>Sep 2023 – Present</span>
               </div>
-              <p>Focusing on legged-robot motion control, real-time modeling, and rapid demo iteration.</p>
+              <p data-i18n="edu_master_desc">Focusing on legged-robot motion control, real-time modeling, and rapid demo iteration.</p>
               <ul class="detail-list">
-                <li>CET-4/6 · IELTS 7.0</li>
-                <li>Exchange: University of Warsaw · Imperial College AI Program · Team Lead</li>
-                <li>Cambridge Micro & Nano Materials Exchange · Team Lead</li>
+                <li data-i18n="edu_master_li1">CET-4/6 · IELTS 7.0</li>
+                <li data-i18n="edu_master_li2">Exchange: University of Warsaw · Imperial College AI Program · Team Lead</li>
+                <li data-i18n="edu_master_li3">Cambridge Micro & Nano Materials Exchange · Team Lead</li>
               </ul>
             </article>
             <article class="card edu-card">
               <div class="edu-meta">
                 <div>
-                  <h3>Huazhong University of Science and Technology</h3>
-                  <p>School of Materials Science & Engineering · B.Eng</p>
+                  <h3 data-i18n="edu_bachelor_title">Huazhong University of Science and Technology</h3>
+                  <p data-i18n="edu_bachelor_school">School of Materials Science & Engineering · B.Eng</p>
                 </div>
                 <span>Sep 2019 – Jun 2023</span>
               </div>
-              <p>Blended manufacturing knowledge with robotics hardware, strengthening prototyping skills.</p>
+              <p data-i18n="edu_bachelor_desc">Blended manufacturing knowledge with robotics hardware, strengthening prototyping skills.</p>
               <ul class="detail-list">
-                <li>National Scholarship (2022) · National Endeavor Scholarship (2021)</li>
-                <li>National 3D Modeling Competition · National First Prize & Provincial Special Prize (2022) · Team Lead</li>
-                <li>YongGuan Cup · National Second Prize & University Special Prize (2022) · Team Lead</li>
-                <li>Outstanding Student Award (2019–2022)</li>
+                <li data-i18n="edu_bachelor_li1">National Scholarship (2022) · National Endeavor Scholarship (2021)</li>
+                <li data-i18n="edu_bachelor_li2">National 3D Modeling Competition · National First Prize & Provincial Special Prize (2022) · Team Lead</li>
+                <li data-i18n="edu_bachelor_li3">YongGuan Cup · National Second Prize & University Special Prize (2022) · Team Lead</li>
+                <li data-i18n="edu_bachelor_li4">Outstanding Student Award (2019–2022)</li>
               </ul>
             </article>
           </div>
@@ -215,8 +214,8 @@
       <section class="oss" id="oss">
         <div class="container">
           <div class="section-heading">
-            <h2>Open Source Toolkit</h2>
-            <p>Hover to preview upcoming demos; I’ll fill in live descriptions shortly.</p>
+            <h2 data-i18n="oss_heading">Open Source Toolkit</h2>
+            <p data-i18n="oss_desc">Say hi on my Bilibili profile: <a class="oss-link" href="https://space.bilibili.com/438723840" target="_blank" rel="noreferrer">@晴糖豆</a></p>
           </div>
           <div class="oss-grid">
             <article class="card oss-card">
@@ -233,7 +232,7 @@
               <div class="oss-meta">
                 <p class="eyebrow">Tool 01</p>
                 <h3>ROS2 Workspace Manager</h3>
-                <p class="placeholder">
+                <p class="placeholder" data-i18n="oss_ros2_desc">
                   GUI for ROS2 workspaces: selective builds, symlink-install, smart cleanup, theme toggle, dependency graph, and live build logs.
                 </p>
                 <a class="oss-link" href="https://www.bilibili.com/video/BV1cE1KBeEXB" target="_blank" rel="noreferrer">Watch on Bilibili →</a>
@@ -253,7 +252,7 @@
               <div class="oss-meta">
                 <p class="eyebrow">Tool 02</p>
                 <h3>Mujoco Viewer</h3>
-                <p class="placeholder">
+                <p class="placeholder" data-i18n="oss_mujoco_desc">
                   PyQt5 viewer for MuJoCo models with path memory, base & joint sliders, live info panel, static pose tuning, and quick reset.
                 </p>
                 <a class="oss-link" href="https://www.bilibili.com/video/BV1wZW1zyEgq" target="_blank" rel="noreferrer">Watch on Bilibili →</a>
@@ -264,7 +263,7 @@
               <div class="oss-meta">
                 <p class="eyebrow">Tool 03</p>
                 <h3>easy HybriK</h3>
-                <p class="placeholder">Placeholder for feature summary and repo link.</p>
+                <p class="placeholder" data-i18n="oss_easy_desc">Placeholder for feature summary and repo link.</p>
               </div>
             </article>
           </div>
@@ -274,13 +273,13 @@
       <section class="contact" id="contact">
         <div class="container grid-two">
           <div>
-            <h2>Contact</h2>
-            <p>Feel free to reach out for collaborations, questions, or any robotics chats.</p>
+            <h2 data-i18n="contact_heading">Contact</h2>
+            <p data-i18n="contact_desc">Feel free to reach out for collaborations, questions, or any robotics chats.</p>
           </div>
           <div class="contact-card">
             <ul>
-              <li><span>Email</span><a href="mailto:LockedFlysher@qq.com">LockedFlysher@qq.com</a></li>
-              <li><span>GitHub</span><a href="https://github.com/lockedflysher" target="_blank" rel="noreferrer">lockedflysher</a></li>
+              <li><span data-i18n="contact_email_label">Email</span><a href="mailto:LockedFlysher@qq.com">LockedFlysher@qq.com</a></li>
+              <li><span data-i18n="contact_github_label">GitHub</span><a href="https://github.com/lockedflysher" target="_blank" rel="noreferrer">lockedflysher</a></li>
             </ul>
           </div>
         </div>

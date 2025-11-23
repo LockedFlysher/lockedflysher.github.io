@@ -72,6 +72,22 @@ img {
   justify-content: space-between;
 }
 
+.lang-toggle {
+  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.8);
+  color: #0f172a;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-toggle:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 .site-header {
   position: sticky;
   top: 0;

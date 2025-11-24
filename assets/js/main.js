@@ -55,7 +55,7 @@ const translations = {
     exp_lingwen_desc: '为四足与人形机器人搭建实时通信基础设施。',
     exp_lingwen_company: '零稳机器人',
     exp_lingwen_role: 'EtherCAT 通信工程师',
-    exp_lingwen_li1: '实现通用 EtherCAT 主站通信库，兼容 CSP / CSV / CST 模式。',
+    exp_lingwen_li1: '维护并拓展 EtherCAT 主站通信库与硬件接口，兼容 CSP / CSV / CST 模式。',
     exp_lingwen_li2: '完成 Elmo 驱动参数辨识与调参，分布式时钟同步至 4 kHz。',
     exp_lingwen_li3: '实现稳定踏步与 0–15° 坡度攀爬，平地速度 0.7 m/s。',
     edu_heading: '教育经历',

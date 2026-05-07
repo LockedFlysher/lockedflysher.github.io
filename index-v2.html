@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SunnyPea · Robotics Motion Control Engineer</title>
+  <meta name="description" content="Huang Xuecong - Robotics Motion Control Engineer specializing in legged robots, MPC, and reinforcement learning.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/main-v2.css">
+  <link rel="stylesheet" href="assets/css/skills-edu-contact.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="c-header" role="banner">
+    <div class="l-container">
+      <div class="c-header__inner">
+        <a href="#top" class="c-logo" aria-label="Home">
+          <span class="c-logo__bracket">[</span>
+          <span class="c-logo__text">SunnyPea</span>
+          <span class="c-logo__bracket">]</span>
+        </a>
+
+        <nav class="c-nav" role="navigation" aria-label="Main navigation">
+          <ul class="c-nav__list">
+            <li><a href="#experience" class="c-nav__link" data-i18n="nav_work">Work</a></li>
+            <li><a href="#publications" class="c-nav__link">Papers</a></li>
+            <li><a href="#skills" class="c-nav__link" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#education" class="c-nav__link" data-i18n="nav_education">Education</a></li>
+            <li><a href="#contact" class="c-nav__link" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="c-header__actions">
+          <button class="c-lang-toggle" data-lang-toggle type="button" aria-label="Toggle language">
+            EN
+          </button>
+          <a href="https://github.com/lockedflysher" class="c-btn c-btn--ghost" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero Section -->
+    <section class="c-hero">
+      <div class="l-container">
+        <div class="c-hero__grid">
+          <div class="c-hero__photo" style="border-radius: 0 !important;">
+            <img src="assets/images/profile-sunnypea.jpg" alt="SunnyPea" style="border-radius: 0 !important;" />
+          </div>
+
+          <div class="c-hero__content">
+            <div class="c-hero__eyebrow">
+              <span class="c-status-indicator"></span>
+              <span data-i18n="hero_tagline">M.Eng in AI & Automation · HUST</span>
+            </div>
+
+            <h1 class="c-hero__title">
+              <span class="c-hero__name">黄学聪</span>
+              <span class="c-hero__slash">/</span>
+              <span class="c-hero__en">SunnyPea</span>
+            </h1>
+
+            <p class="c-hero__role" data-i18n="hero_role">Robotics Motion Control Engineer</p>
+
+            <div class="c-hero__summary">
+              <div class="c-terminal">
+                <div class="c-terminal__line">
+                  <span class="c-terminal__prompt">$</span>
+                  <span class="c-terminal__text">specialty</span>
+                </div>
+                <div class="c-terminal__output">
+                  <ul class="c-terminal__list">
+                    <li>Learning-based control (IsaacLab / IsaacSim)</li>
+                    <li>Model-based control (OCS2 / CasADi / MPC)</li>
+                    <li>Real-time communication (ROS1/ROS2 / EtherCAT)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="c-hero__cta">
+              <a href="#experience" class="c-btn c-btn--primary" data-i18n="hero_cta_work">View Experience</a>
+              <a href="mailto:LockedFlysher@qq.com" class="c-btn c-btn--ghost" data-i18n="hero_cta_contact">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="c-section" id="experience">
+      <div class="l-container">
+        <header class="c-section__header">
+          <h2 class="c-section__title" data-i18n="section_experience">Experience</h2>
+          <span class="c-section__count">03</span>
+        </header>
+
+        <div class="c-timeline">
+          <!-- Leju Robotics -->
+          <article class="c-timeline__item">
+            <div class="c-card">
+              <div class="c-card__header">
+                <div>
+                  <h3 class="c-card__title">乐聚机器人 · Leju Robotics</h3>
+                  <p class="c-card__subtitle" data-i18n="exp_leju_role">Motion Control Algorithm Engineer</p>
+                </div>
+                <time class="c-badge" data-i18n="exp_leju_period">Jun 2025 – Nov 2025</time>
+              </div>
+
+              <div class="c-card__body">
+                <p data-i18n="exp_leju_desc">Led Parallel MPC research on quadruped robots, built end-to-end pipeline from solver to RL deployment.</p>
+
+                <ul class="c-achievement-list">
+                  <li class="c-achievement-list__item" data-i18n="exp_leju_ach1">GPU-parallel MPC solver supporting WBD/FCD/SRBD models with unified JAX codebase</li>
+                  <li class="c-achievement-list__item" data-i18n="exp_leju_ach2">MPC-guided RL training accelerating convergence and improving robustness</li>
+                  <li class="c-achievement-list__item" data-i18n="exp_leju_ach3">Kuavo blind locomotion on structured terrain</li>
+                </ul>
+
+                <div class="c-media-row">
+                  <div class="c-media">
+                    <video src="assets/videos/lejv1.mov" muted autoplay loop playsinline controls></video>
+                  </div>
+                  <div class="c-media">
+                    <video src="assets/videos/lejv2.mov" muted autoplay loop playsinline controls></video>
+                  </div>
+                </div>
+
+                <div class="c-tag__list">
+                  <span class="c-tag">JAX</span>
+                  <span class="c-tag">MPC</span>
+                  <span class="c-tag">RL</span>
+                  <span class="c-tag">IsaacLab</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Qiling Robotics -->
+          <article class="c-timeline__item">
+            <div class="c-card">
+              <div class="c-card__header">
+                <div>
+                  <h3 class="c-card__title">启灵机器人 · Qiling Robotics</h3>
+                  <p class="c-card__subtitle" data-i18n="exp_qiling_role">Humanoid RL Control Engineer</p>
+                </div>
+                <time class="c-badge" data-i18n="exp_qiling_period">Apr 2024 – May 2025</time>
+              </div>
+
+              <div class="c-card__body">
+                <p data-i18n="exp_qiling_desc">Designed and deployed reinforcement learning control for humanoid robots.</p>
+
+                <ul class="c-achievement-list">
+                  <li class="c-achievement-list__item" data-i18n="exp_qiling_ach1">26-DoF robot stable walking at 1.2 m/s with push recovery</li>
+                  <li class="c-achievement-list__item" data-i18n="exp_qiling_ach2">Standardized ROS2 + SDK framework unifying sim, algorithm, and hardware</li>
+                </ul>
+
+                <div class="c-media-row">
+                  <div class="c-media">
+                    <iframe src="https://player.bilibili.com/player.html?bvid=BV1DzrAYMEoY&autoplay=0&muted=1" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  <div class="c-media">
+                    <video src="assets/videos/qiling2.mov" muted autoplay loop playsinline controls></video>
+                  </div>
+                </div>
+
+                <div class="c-tag__list">
+                  <span class="c-tag">ROS2</span>
+                  <span class="c-tag">PyTorch</span>
+                  <span class="c-tag">MuJoCo</span>
+                  <span class="c-tag">IsaacGym</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lingwen Technology -->
+          <article class="c-timeline__item">
+            <div class="c-card">
+              <div class="c-card__header">
+                <div>
+                  <h3 class="c-card__title">零稳科技 · Lingwen Technology</h3>
+                  <p class="c-card__subtitle" data-i18n="exp_lingwen_role">EtherCAT Communication Engineer</p>
+                </div>
+                <time class="c-badge" data-i18n="exp_lingwen_period">Oct 2023 – Apr 2024</time>
+              </div>
+
+              <div class="c-card__body">
+                <p data-i18n="exp_lingwen_desc">Built real-time communication backbone for legged robots.</p>
+
+                <ul class="c-achievement-list">
+                  <li class="c-achievement-list__item" data-i18n="exp_lingwen_ach1">Extended EtherCAT master library supporting CSP/CSV/CST modes</li>
+                  <li class="c-achievement-list__item" data-i18n="exp_lingwen_ach2">Elmo drive tuning achieving 4 kHz distributed clock sync</li>
+                  <li class="c-achievement-list__item" data-i18n="exp_lingwen_ach3">Quadruped 0.7 m/s walking with 0-15° slope climbing</li>
+                </ul>
+
+                <div class="c-media-row">
+                  <div class="c-media">
+                    <video src="assets/videos/lingwen1.mp4" muted autoplay loop playsinline controls></video>
+                  </div>
+                  <div class="c-media">
+                    <video src="assets/videos/lingwen2.mp4" muted autoplay loop playsinline controls></video>
+                  </div>
+                </div>
+
+                <div class="c-tag__list">
+                  <span class="c-tag">C++</span>
+                  <span class="c-tag">EtherCAT</span>
+                  <span class="c-tag">Elmo</span>
+                  <span class="c-tag">OCS2</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="c-section c-section--alt" id="publications">
+      <div class="l-container">
+        <header class="c-section__header">
+          <h2 class="c-section__title" data-i18n="section_publications">Publications</h2>
+          <span class="c-section__count">03</span>
+        </header>
+
+        <div class="c-pub-list">
+          <article class="c-pub-card">
+            <div class="c-pub-card__badge c-pub-card__badge--journal">SCI Q1</div>
+            <h3 class="c-pub-card__title">
+              Event-Triggered Dynamic Gains for Practical Prescribed-Time Tracking in Euler-Lagrange Systems
+            </h3>
+            <p class="c-pub-card__meta">
+              <span class="c-pub-card__venue">IEEE Transactions on Industrial Electronics, 2026</span>
+            </p>
+            <p class="c-pub-card__authors">
+              <strong>Gewei Zuo</strong>, <strong>Xuecong Huang</strong>, Lijun Zhu, Han Ding
+            </p>
+            <p class="c-pub-card__note">Co-first author · Accepted · SCI Indexed</p>
+          </article>
+
+          <article class="c-pub-card">
+            <div class="c-pub-card__badge c-pub-card__badge--journal">SCI</div>
+            <h3 class="c-pub-card__title">
+              A Whole-Body Disturbance Rejection Control Framework for Dynamic Motions in Legged Robots
+            </h3>
+            <p class="c-pub-card__meta">
+              <span class="c-pub-card__venue">IEEE Robotics and Automation Letters, 2025, 10(10): 9774–9781</span>
+            </p>
+            <p class="c-pub-card__authors">
+              Bolin Li, Wentao Zhang, <strong>Xuecong Huang</strong>, Lijun Zhu, Han Ding
+            </p>
+            <p class="c-pub-card__note">Published · SCI Indexed</p>
+          </article>
+
+          <article class="c-pub-card">
+            <div class="c-pub-card__badge c-pub-card__badge--conference">EI</div>
+            <h3 class="c-pub-card__title">
+              Online Parallel MPC-Guided Reinforcement Learning Framework for Legged Locomotion
+            </h3>
+            <p class="c-pub-card__meta">
+              <span class="c-pub-card__venue">ICEAAI 2026 · 2nd International Conference on Electrical Automation and Artificial Intelligence</span>
+            </p>
+            <p class="c-pub-card__authors">
+              <strong>Xuecong Huang</strong>, Zhixiang Wang, Yujun Liang
+            </p>
+            <p class="c-pub-card__note">First author · Accepted · EI Indexed</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="c-section c-section--alt" id="skills">
+      <div class="l-container">
+        <header class="c-section__header">
+          <h2 class="c-section__title" data-i18n="section_skills">Technical Skills</h2>
+        </header>
+
+        <div class="c-skill-matrix">
+          <div class="c-skill-group">
+            <h3 class="c-skill-group__title">Control & Learning</h3>
+            <div class="c-skill-group__tags">
+              <span class="c-tag">MPC</span>
+              <span class="c-tag">WBC</span>
+              <span class="c-tag">RL</span>
+              <span class="c-tag">IsaacLab</span>
+              <span class="c-tag">OCS2</span>
+              <span class="c-tag">CasADi</span>
+              <span class="c-tag">JAX</span>
+              <span class="c-tag">PyTorch</span>
+            </div>
+          </div>
+
+          <div class="c-skill-group">
+            <h3 class="c-skill-group__title">Simulation</h3>
+            <div class="c-skill-group__tags">
+              <span class="c-tag">MuJoCo</span>
+              <span class="c-tag">Isaac Gym</span>
+              <span class="c-tag">Gazebo</span>
+              <span class="c-tag">Rviz</span>
+            </div>
+          </div>
+
+          <div class="c-skill-group">
+            <h3 class="c-skill-group__title">Communication</h3>
+            <div class="c-skill-group__tags">
+              <span class="c-tag">ROS1</span>
+              <span class="c-tag">ROS2</span>
+              <span class="c-tag">EtherCAT</span>
+              <span class="c-tag">CAN</span>
+              <span class="c-tag">DDS</span>
+            </div>
+          </div>
+
+          <div class="c-skill-group">
+            <h3 class="c-skill-group__title">Programming</h3>
+            <div class="c-skill-group__tags">
+              <span class="c-tag">Python</span>
+              <span class="c-tag">C++</span>
+              <span class="c-tag">CMake</span>
+              <span class="c-tag">Docker</span>
+              <span class="c-tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="c-section" id="education">
+      <div class="l-container">
+        <header class="c-section__header">
+          <h2 class="c-section__title" data-i18n="section_education">Education</h2>
+        </header>
+
+        <div class="c-edu-timeline">
+          <div class="c-edu-item">
+            <div class="c-edu-item__marker"></div>
+            <div class="c-edu-item__content">
+              <div class="c-edu-item__header">
+                <h3 class="c-edu-item__school">Huazhong University of Science and Technology</h3>
+                <span class="c-edu-item__degree">M.Eng · AI & Automation</span>
+                <span class="c-edu-item__time">2023 – Present</span>
+              </div>
+              <p class="c-edu-item__focus">Legged robot MPC & learning-based control</p>
+              <div class="c-tag__list">
+                <span class="c-tag c-tag--tertiary">IELTS 7.0</span>
+                <span class="c-tag">Warsaw · Imperial · Cambridge Exchange Lead</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-edu-item">
+            <div class="c-edu-item__marker"></div>
+            <div class="c-edu-item__content">
+              <div class="c-edu-item__header">
+                <h3 class="c-edu-item__school">Huazhong University of Science and Technology</h3>
+                <span class="c-edu-item__degree">B.Eng · Materials Science</span>
+                <span class="c-edu-item__time">2019 – 2023</span>
+              </div>
+              <p class="c-edu-item__focus">Robotics hardware prototyping</p>
+              <div class="c-tag__list">
+                <span class="c-tag c-tag--secondary">National Scholarship (Top 0.2%)</span>
+                <span class="c-tag">3D Modeling Competition · 1st Prize</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="c-section c-section--alt" id="contact">
+      <div class="l-container">
+        <header class="c-section__header">
+          <h2 class="c-section__title" data-i18n="section_contact">Contact</h2>
+        </header>
+
+        <div class="c-contact-bar">
+          <a href="mailto:LockedFlysher@qq.com" class="c-contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span>LockedFlysher@qq.com</span>
+          </a>
+
+          <a href="https://github.com/lockedflysher" class="c-contact-link" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            <span>github.com/lockedflysher</span>
+          </a>
+
+          <a href="https://space.bilibili.com/438723840" class="c-contact-link" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>
+            </svg>
+            <span>@晴糖豆</span>
+          </a>
+
+          <div class="c-contact-link c-contact-link--static">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Wuhan, China</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="c-footer" role="contentinfo">
+    <div class="l-container">
+      <div class="c-footer__inner">
+        <p class="c-footer__copyright">
+          © <span id="year">2024</span> SunnyPea · Huang Xuecong
+        </p>
+        <p class="c-footer__meta">
+          <span data-i18n="footer_built">Built with</span> ❤️ ·
+          <span data-i18n="footer_hosted">Hosted on</span> GitHub Pages
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/modules/grid-background.js"></script>
+  <script src="assets/js/modules/i18n.js"></script>
+  <script src="assets/js/modules/smooth-scroll.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

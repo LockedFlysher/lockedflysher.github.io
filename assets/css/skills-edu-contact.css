@@ -1,0 +1,153 @@
+/* ============================================
+   Skills, Education, Contact - Redesigned
+   ============================================ */
+
+/* Skills - Tag Matrix */
+.c-skill-matrix {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.c-skill-group {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.c-skill-group__title {
+  flex-shrink: 0;
+  width: 140px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-top: 4px;
+}
+
+.c-skill-group__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+/* Education - Timeline */
+.c-edu-timeline {
+  position: relative;
+  padding-left: 24px;
+}
+
+.c-edu-timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.c-edu-item {
+  position: relative;
+  padding-bottom: var(--space-lg);
+}
+
+.c-edu-item:last-child {
+  padding-bottom: 0;
+}
+
+.c-edu-item__marker {
+  position: absolute;
+  left: -22px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-accent-primary);
+}
+
+.c-edu-item__content {
+  padding: var(--space-md);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.c-edu-item__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-xs) var(--space-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.c-edu-item__school {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.c-edu-item__degree {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.c-edu-item__time {
+  font-size: var(--text-xs);
+  font-family: var(--font-mono);
+  color: var(--color-accent-secondary);
+  margin-left: auto;
+}
+
+.c-edu-item__focus {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+/* Contact - Bar */
+.c-contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+}
+
+.c-contact-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.c-contact-link:hover {
+  border-color: var(--color-accent-primary);
+  color: var(--color-accent-primary);
+}
+
+.c-contact-link svg {
+  flex-shrink: 0;
+  color: var(--color-accent-primary);
+}
+
+.c-contact-link--static {
+  cursor: default;
+}
+
+.c-contact-link--static:hover {
+  border-color: var(--color-border);
+  color: var(--color-text-secondary);
+}

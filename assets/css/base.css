@@ -1,0 +1,172 @@
+/* ============================================
+   Design Tokens - 设计系统基础变量
+   ============================================ */
+:root {
+  /* Light Theme - 工程蓝图风格 */
+  --color-bg-primary: #f8fafc;
+  --color-bg-secondary: #f1f5f9;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f8fafc;
+
+  --color-accent-primary: #2563eb;      /* 工程蓝 */
+  --color-accent-secondary: #0891b2;    /* 科技青 */
+  --color-accent-tertiary: #7c3aed;     /* 数据紫 */
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+
+  --color-border: rgba(37, 99, 235, 0.15);
+  --color-border-hover: rgba(37, 99, 235, 0.3);
+
+  /* Grid System */
+  --grid-unit: 8px;
+  --space-xs: calc(var(--grid-unit) * 1);
+  --space-sm: calc(var(--grid-unit) * 2);
+  --space-md: calc(var(--grid-unit) * 3);
+  --space-lg: calc(var(--grid-unit) * 4);
+  --space-xl: calc(var(--grid-unit) * 6);
+  --space-2xl: calc(var(--grid-unit) * 8);
+
+  /* Typography - 技术文档风格 */
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans: 'Inter', 'Space Grotesk', system-ui, sans-serif;
+
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 1.875rem;  /* 30px */
+
+  /* Layout */
+  --container-max: 1200px;
+  --section-padding: var(--space-xl);
+
+  /* Animation */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Border Radius - 锐角为主 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+/* ============================================
+   CSS Reset & Base
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background: var(--color-bg-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-accent-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-secondary);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* ============================================
+   Layout - 网格系统
+   ============================================ */
+.l-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.l-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.l-grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.l-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.l-flex {
+  display: flex;
+}
+
+.l-flex--between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-flex--column {
+  flex-direction: column;
+}
+
+.l-gap-sm { gap: var(--space-sm); }
+.l-gap-md { gap: var(--space-md); }
+.l-gap-lg { gap: var(--space-lg); }
+
+/* ============================================
+   Section - 区块容器
+   ============================================ */
+.c-section {
+  padding: var(--section-padding) 0;
+  position: relative;
+}
+
+.c-section--alt {
+  background: var(--color-bg-secondary);
+}
+
+.c-section__header {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.c-section__title {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.c-section__subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}

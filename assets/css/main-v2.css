@@ -339,6 +339,8 @@
   background: var(--color-bg-secondary);
 }
 
+.c-media video,
+.c-media iframe,
 .c-media img {
   position: absolute;
   top: 0;

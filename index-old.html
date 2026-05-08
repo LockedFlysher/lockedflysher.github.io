@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SunnyPea · Robotics Demo Portfolio</title>
+    <meta name="description" content="SunnyPea · Robotics motion control engineer · Selected demos and experience for GitHub Pages." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container flex-between">
+        <button class="lang-toggle" type="button" aria-label="Toggle language">EN</button>
+        <nav>
+          <ul>
+            <li><a href="#experience" data-i18n="nav_work">Work</a></li>
+            <li><a href="#education" data-i18n="nav_education">Education</a></li>
+            <li><a href="#oss" data-i18n="nav_skills">Toolkit</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn ghost" href="https://github.com/lockedflysher" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero_eyebrow">Students until the last sunrise</p>
+            <h1 data-i18n="hero_heading">SunnyPea · Robotics Motion Control Engineer</h1>
+            <div class="lede lede-list">
+              <span data-i18n="hero_bullet1">• Learning-based motion control built on the IsaacLab framework.</span>
+              <span data-i18n="hero_bullet2">• Model-based control pipelines powered by OCS2 or CasADi.</span>
+              <span data-i18n="hero_bullet3">• Python/C++, ROS1/ROS2, EtherCAT, Mujoco, and Gazebo tooling.</span>
+            </div>
+            <div class="cta-group">
+              <a class="btn" href="#experience" data-i18n="hero_cta_primary">See Work</a>
+              <a class="btn ghost" href="mailto:LockedFlysher@qq.com" data-i18n="hero_cta_secondary">Email Me</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-label="SunnyPea portrait">
+            <div class="hero-photo">
+              <img src="assets/images/profile-sunnypea.jpg" alt="SunnyPea" />
+              <div class="hero-photo-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <h2 data-i18n="exp_heading">Highlighted Work</h2>
+            <p data-i18n="exp_desc">Hover or tap on each experience to preview its paired demos; the right panel updates instantly with synchronized videos.</p>
+          </div>
+          <div class="experience-grid">
+            <div class="experience-list">
+              <article
+                class="card experience-card is-active"
+                data-video="assets/videos/lejv1.mov"
+                data-videos="assets/videos/lejv1.mov|assets/videos/lejv2.mov"
+                data-video-titles="Parallel MPC GPU Solver|Kuavo Blind Locomotion"
+                data-label="Leju Robotics · Parallel MPC"
+              >
+              <header>
+                <div>
+                  <h3 data-i18n="exp_leju_company">Leju Robotics</h3>
+                  <p data-i18n="exp_leju_role">Motion Control Algorithm Engineer</p>
+                </div>
+                <span>Jun 2025 – Nov 2025</span>
+              </header>
+              <p data-i18n="exp_leju_desc">Directed the application of Parallel MPC on quadruped robots, establishing the pipeline from solver design to RL-assisted deployment.</p>
+              <ul class="detail-list">
+                <li data-i18n="exp_leju_li1">Implemented a GPU-parallel MPC solver supporting Whole-Body Dynamics (WBD), Full Centroidal Dynamics (FCD), and Single-Rigid-Body (SRBD) models with a unified JAX codebase.</li>
+                <li data-i18n="exp_leju_li2">Used MPC-generated high-quality trajectories to guide reinforcement learning, accelerating convergence, simplifying reward shaping, and boosting robustness versus standalone MPC.</li>
+                <li data-i18n="exp_leju_li3">Deployed end-to-end reinforcement learning to let Kuavo robots traverse structured terrain under blind locomotion constraints.</li>
+              </ul>
+              </article>
+
+              <article
+                class="card experience-card"
+                data-video="https://player.bilibili.com/player.html?bvid=BV1DzrAYMEoY&autoplay=0&muted=1"
+                data-videos="https://player.bilibili.com/player.html?bvid=BV1DzrAYMEoY&autoplay=0&muted=1|assets/videos/qiling2.mov"
+                data-video-titles="Qiling Robotics · Humanoid RL Control|Qiling Robotics · Field Test"
+                data-label="Qiling Robotics · Humanoid RL Control"
+              >
+              <header>
+                <div>
+                  <h3 data-i18n="exp_qiling_company">Qiling Robotics</h3>
+                  <p data-i18n="exp_qiling_role">Motion Control Algorithm Engineer</p>
+                </div>
+                <span>Apr 2024 – May 2025</span>
+              </header>
+              <p data-i18n="exp_qiling_desc">Focused on humanoid reinforcement-learning control algorithms and their deployment on physical robots.</p>
+              <ul class="detail-list">
+                <li data-i18n="exp_qiling_li1">Delivered 1.2 m/s stable walking with rapid recovery from external pushes on a 26-DoF legged robot.</li>
+                <li data-i18n="exp_qiling_li2">Built a ROS2 + in-house SDK interaction layer so algorithms, simulators, and physical robots share standardized control/telemetry APIs.</li>
+              </ul>
+              </article>
+
+              <article
+                class="card experience-card"
+                data-video="assets/videos/lingwen1.mp4"
+                data-videos="assets/videos/lingwen1.mp4|assets/videos/lingwen2.mp4"
+                data-video-titles="Lingwen Technology · EtherCAT Live|Lingwen Technology · Stair Trial"
+                data-label="Lingwen Technology · EtherCAT Live"
+              >
+              <header>
+                <div>
+                  <h3 data-i18n="exp_lingwen_company">Lingwen Technology</h3>
+                  <p data-i18n="exp_lingwen_role">EtherCAT Communication Engineer</p>
+                </div>
+                <span>Oct 2023 – Apr 2024</span>
+              </header>
+              <p data-i18n="exp_lingwen_desc">Delivered the real-time communication backbone for quadruped and other legged platforms.</p>
+              <ul class="detail-list">
+                <li data-i18n="exp_lingwen_li1">Maintained and extended the EtherCAT master communication library and hardware interfaces supporting CSP / CSV / CST modes.</li>
+                <li data-i18n="exp_lingwen_li2">Completed Elmo drive parameter identification plus controller tuning, reaching 4 kHz distributed clock synchronization.</li>
+                <li data-i18n="exp_lingwen_li3">Unlocked stable stair-stepping on tall legged robots and boosted quadruped flat-ground speed to 0.7 m/s while climbing 0–15° slopes reliably.</li>
+              </ul>
+              </article>
+            </div>
+
+            <aside class="experience-media" aria-live="polite">
+              <div class="media-videos">
+                <div class="video-display" data-slot="0" data-active="assets/videos/lejv1.mov">
+                  <div class="video-layer is-active">
+                    <video
+                      src="assets/videos/lejv1.mov"
+                      title="Leju Robotics · Parallel MPC"
+                      playsinline
+                      muted
+                      autoplay
+                      loop
+                      controls
+                    ></video>
+                  </div>
+                </div>
+                <div class="video-display" data-slot="1" data-active="assets/videos/lejv2.mov">
+                  <div class="video-layer is-active">
+                    <video
+                      src="assets/videos/lejv2.mov"
+                      title="Kuavo Blind Locomotion"
+                      playsinline
+                      muted
+                      autoplay
+                      loop
+                      controls
+                    ></video>
+                  </div>
+                </div>
+              </div>
+              <div class="video-info">
+                <p class="video-label" id="videoLabel">Leju Robotics · Parallel MPC</p>
+                <p class="video-desc" id="videoDesc">Parallel MPC exploration on quadruped platforms, rendered via GPU-accelerated solvers and Kuavo blind locomotion demos.</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="education" id="education">
+        <div class="container">
+          <div class="section-heading">
+            <h2 data-i18n="edu_heading">Education</h2>
+          </div>
+          <div class="edu-list">
+            <article class="card edu-card">
+              <div class="edu-meta">
+                <div>
+                  <h3 data-i18n="edu_master_title">Huazhong University of Science and Technology</h3>
+                  <p data-i18n="edu_master_school">School of Artificial Intelligence & Automation · M.Eng</p>
+                </div>
+                <span>Sep 2023 – Present</span>
+              </div>
+              <p data-i18n="edu_master_desc">Focusing on legged-robot motion control, real-time modeling, and rapid demo iteration.</p>
+              <ul class="detail-list">
+                <li data-i18n="edu_master_li1">CET-4/6 · IELTS 7.0</li>
+                <li data-i18n="edu_master_li2">Exchange: University of Warsaw · Imperial College AI Program · Team Lead</li>
+                <li data-i18n="edu_master_li3">Cambridge Micro & Nano Materials Exchange · Team Lead</li>
+              </ul>
+            </article>
+            <article class="card edu-card">
+              <div class="edu-meta">
+                <div>
+                  <h3 data-i18n="edu_bachelor_title">Huazhong University of Science and Technology</h3>
+                  <p data-i18n="edu_bachelor_school">School of Materials Science & Engineering · B.Eng</p>
+                </div>
+                <span>Sep 2019 – Jun 2023</span>
+              </div>
+              <p data-i18n="edu_bachelor_desc">Blended manufacturing knowledge with robotics hardware, strengthening prototyping skills.</p>
+              <ul class="detail-list">
+                <li data-i18n="edu_bachelor_li1">National Scholarship (2022) · National Endeavor Scholarship (2021)</li>
+                <li data-i18n="edu_bachelor_li2">National 3D Modeling Competition · National First Prize & Provincial Special Prize (2022) · Team Lead</li>
+                <li data-i18n="edu_bachelor_li3">YongGuan Cup · National Second Prize & University Special Prize (2022) · Team Lead</li>
+                <li data-i18n="edu_bachelor_li4">Outstanding Student Award (2019–2022)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="oss" id="oss">
+        <div class="container">
+          <div class="section-heading">
+            <h2 data-i18n="oss_heading">Open Source Toolkit</h2>
+            <p data-i18n="oss_desc">Say hi on my Bilibili profile: <a class="oss-link" href="https://space.bilibili.com/438723840" target="_blank" rel="noreferrer">@晴糖豆</a></p>
+          </div>
+          <div class="oss-grid">
+            <article class="card oss-card">
+              <div class="oss-thumb video-thumb" aria-label="ROS2 Workspace Manager video">
+                <iframe
+                  src="https://player.bilibili.com/player.html?bvid=BV1cE1KBeEXB&autoplay=0&muted=1"
+                  title="ROS2 Workspace Manager"
+                  frameborder="0"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="oss-meta">
+                <p class="eyebrow">Tool 01</p>
+                <h3>ROS2 Workspace Manager</h3>
+                <p class="placeholder" data-i18n="oss_ros2_desc">
+                  GUI for ROS2 workspaces: selective builds, symlink-install, smart cleanup, theme toggle, dependency graph, and live build logs.
+                </p>
+                <a class="oss-link" href="https://www.bilibili.com/video/BV1cE1KBeEXB" target="_blank" rel="noreferrer">Watch on Bilibili →</a>
+              </div>
+            </article>
+            <article class="card oss-card">
+              <div class="oss-thumb video-thumb" aria-label="Mujoco Viewer video">
+                <iframe
+                  src="https://player.bilibili.com/player.html?bvid=BV1wZW1zyEgq&autoplay=0&muted=1"
+                  title="Mujoco Viewer"
+                  frameborder="0"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="oss-meta">
+                <p class="eyebrow">Tool 02</p>
+                <h3>Mujoco Viewer</h3>
+                <p class="placeholder" data-i18n="oss_mujoco_desc">
+                  PyQt5 viewer for MuJoCo models with path memory, base & joint sliders, live info panel, static pose tuning, and quick reset.
+                </p>
+                <a class="oss-link" href="https://www.bilibili.com/video/BV1wZW1zyEgq" target="_blank" rel="noreferrer">Watch on Bilibili →</a>
+              </div>
+            </article>
+            <article class="card oss-card">
+              <div class="oss-thumb" aria-label="easy HybriK preview"></div>
+              <div class="oss-meta">
+                <p class="eyebrow">Tool 03</p>
+                <h3>easy HybriK</h3>
+                <p class="placeholder" data-i18n="oss_easy_desc">Placeholder for feature summary and repo link.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container grid-two">
+          <div>
+            <h2 data-i18n="contact_heading">Contact</h2>
+            <p data-i18n="contact_desc">Feel free to reach out for collaborations, questions, or any robotics chats.</p>
+          </div>
+          <div class="contact-card">
+            <ul>
+              <li><span data-i18n="contact_email_label">Email</span><a href="mailto:LockedFlysher@qq.com">LockedFlysher@qq.com</a></li>
+              <li><span data-i18n="contact_github_label">GitHub</span><a href="https://github.com/lockedflysher" target="_blank" rel="noreferrer">lockedflysher</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> SunnyPea · Built with GitHub Pages</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
